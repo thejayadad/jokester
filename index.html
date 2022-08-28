@@ -6,59 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
- .wrapper{  
-   width: 200px;  
-   padding: 30px 30px;  
-   background-color: rgb(25, 31, 39);  
-   position: absolute;  
-   transform: translate(-50%, -50%);  
-   top: 50%;  
-   left: 50%;  
-   border-radius: 5px;  
-   box-shadow: 20px 20px 40px rgba(97,63,0,0.4);  
- }  
- span{  
-   display: block;  
-   text-align: center;  
-   font-size: 100px;  
- }  
- p{  
-   font-size: 16px;  
-   color: #ffffff;  
-   font-weight: 400;  
-   text-align: center;  
-   word-wrap: break-word;  
-   line-height: 35px;  
-   margin: 30px 0;  
-   opacity: 0;  
- }  
- .fade{  
-   opacity: 1;  
-   transition: opacity 1.5s;  
- }  
- button{  
-   display: block;  
-   background-color:rgb(222, 123, 87);  
-   border: none;  
-   padding: 5px;  
-   font-size: 18px;  
-   color: #171721;  
-   font-weight: 600;  
-   padding: 12px 25px;  
-   margin: 0 auto;  
-   border-radius: 5px;  
-   cursor: pointer;  
-   outline: none;  
- }  
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .box{
+            width: 200px;
+            padding: 30px 30px;
+            background-color: rgb(25, 31, 39);
+            position: absolute;
+            border-radius: 8px;
+            box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 100px;
+        }
+        p{
+            font-size: 15px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            word-wrap: break-word;
+            line-height: 35px;
+            margin: 30px 0;
+            opacity: 0;
+        }
+        .fade {
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+        button {
+            display: block;
+            background: orangered;
+            border: none;
+            padding: 5px;
+            font-size: 15px;
+            color: white;
+
+            font-weight: 600;
+            padding: 12px 25px;
+            margin: 0 auto;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+
+        }
+      
+   
     </style>
 </head>
 <body>
-    <div class="wrapper">  
-        <span>&#128514;</span>  
-        <p id="joke"></p>  
-        <button id="btn">Get Random Joke</button>  
-      </div>  
+<div class="box">
+    <span>&#128514;</span>
+    <p id="joke"></p>
+    <button id="btn">More Jokes!</button>
+</div>
     <script src="main.js">
     </script>
 </body>
